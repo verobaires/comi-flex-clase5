@@ -1,0 +1,73 @@
+/* PSEUDOCLASE */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Oswald:wght@300&display=swap');
+
+body {
+    font-size: 20px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+/* .enlaces a:visited{
+    color: royalblue;
+} */
+
+.enlaces a:hover {
+    background-color: gold;
+}
+
+
+input[type=text]:focus {
+    width: 13rem;
+}
+
+.caja:nth-child(odd) {
+    background: blue;
+}
+
+.caja:nth-child(even) {
+    background: rgb(62, 75, 44);
+}
+
+/* PSEUDOELEMENTO */
+::placeholder {
+    font-size: 1rem;
+    color: deeppink;
+
+}
+
+.caja p::first-letter {
+    font-size: 2.5rem;
+    color: aqua;
+}
+
+
+/* BOOTSTRAP */
+
+h1,
+h2,
+h3 {
+    font-family: 'Oswald', sans-serif;
+    color: goldenrod
+}
+
+.carousel-fondo {
+    background: rgba(147, 135, 135, 0.59);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5.8px);
+    -webkit-backdrop-filter: blur(5.8px);
+    border: 1px solid rgba(147, 135, 135, 0.18);
+}
+
+.carousel-control-next-icon {
+    background-image: url("../img/caret-right-fill.svg");
+  }
+
+  .carousel-control-prev-icon {
+    background-image: url("../img/skip-backward-fill.svg");
+  }
+
+  .carousel-control-next-icon, .carousel-control-prev-icon {
+    filter: invert(39%) sepia(95%) saturate(5885%) hue-rotate(278deg) brightness(95%) contrast(112%);
+  }
